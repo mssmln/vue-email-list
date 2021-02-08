@@ -22,15 +22,23 @@
 // });
 
 
-// opzione con jQuery
-$(document).ready(function() {
-  $.ajax(
-    {
-      url: "https://flynn.boolean.careers/exercises/api/random/mail",
-      method: "GET",
-      success: function(data) {
-        $("#generatedMail").html(data);
-      },
-    }
-  );
-});
+// // opzione con jQuery
+// $(document).ready(function() {
+//   let mails = [];
+//   for (let i = 0; i < 10; i++){
+//     $.ajax(
+//       {
+//         url: "https://flynn.boolean.careers/exercises/api/random/mail",
+//         method: "get",
+//         success: function(result) { // se avessi fatto il for dentro la fun avresti avuto per 10 volte la stessa mail
+//           // console.log(result);
+//           mails.push(result.response);
+//           document.getElementById('generatedMail').innerHTML = mails;
+//         },
+//       }
+//     );
+//
+//   }
+//   console.log(mails);
+//
+// });
